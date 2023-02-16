@@ -1,0 +1,17 @@
+{
+    "title": "MC nultiple key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_pass": 140,
+                "courses_year": 1900
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

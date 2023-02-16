@@ -1,0 +1,6 @@
+{
+    "title": "Empty query",
+    "query": {},
+    "isQueryValid": false,
+    "result": "InsightError"
+}

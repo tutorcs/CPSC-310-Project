@@ -1,0 +1,16 @@
+{
+    "title": "Invalid field in Columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 1
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["DNE", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

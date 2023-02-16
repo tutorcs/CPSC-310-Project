@@ -1,0 +1,16 @@
+{
+    "title": "simple IS query",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_title": "a*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept"],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

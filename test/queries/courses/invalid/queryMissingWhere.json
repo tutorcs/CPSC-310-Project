@@ -1,0 +1,15 @@
+{
+    "title": "Missing where",
+    "query": {
+        "MAP": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

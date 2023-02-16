@@ -1,0 +1,23 @@
+{
+    "title": "simple EQ query",
+    "query": {
+        "WHERE": {
+            "EQ": {
+                "courses_pass": 0
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_year"]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        { "courses_year": 2016 },
+        { "courses_year": 1900 },
+        { "courses_year": 2013 },
+        { "courses_year": 1900 },
+        { "courses_year": 2009 },
+        { "courses_year": 1900 },
+        { "courses_year": 1900 }
+    ]
+}

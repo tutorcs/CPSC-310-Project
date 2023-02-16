@@ -1,0 +1,15 @@
+{
+    "title": "Missing options with invalid filter name",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "TEST": {
+            "COLUMNS": ["courses_dept", "courses_avg"]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

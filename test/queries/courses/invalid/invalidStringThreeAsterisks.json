@@ -1,0 +1,16 @@
+{
+    "title": "Invalid query with three *",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "***"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

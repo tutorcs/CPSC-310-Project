@@ -1,0 +1,25 @@
+{
+    "title": "simple AND query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "EQ": {
+                        "courses_pass": 2
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_title": "a*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_pass"],
+            "ORDER": "courses_pass"
+        }
+    },
+    "isQueryValid": true,
+    "result": [{ "courses_pass": 2 }, { "courses_pass": 2 }]
+}

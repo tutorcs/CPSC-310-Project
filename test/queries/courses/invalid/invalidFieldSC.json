@@ -1,0 +1,16 @@
+{
+    "title": "Invalid field in SC",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_avg": "adhe"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

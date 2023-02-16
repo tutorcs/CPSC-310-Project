@@ -1,0 +1,16 @@
+{
+    "title": "Invalid query with * in the middle of a string",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "input*string"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_dept"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

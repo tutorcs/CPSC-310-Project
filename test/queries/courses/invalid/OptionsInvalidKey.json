@@ -1,0 +1,16 @@
+{
+    "title": "Option invalid key",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "courses_avg": 97
+            }
+        },
+        "OPTIONS": {
+            "MAP": ["courses_dept", "courses_avg"],
+            "MAPS": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

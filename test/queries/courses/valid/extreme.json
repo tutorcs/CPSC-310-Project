@@ -1,0 +1,122 @@
+{
+    "title": "most complicate query",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "AND": [
+                        {
+                            "LT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "EQ": {
+                                "courses_year": 1900
+                            }
+                        },
+                        {
+                            "GT": {
+                                "courses_pass": 140
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_title": "**"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "*e"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_title": "t*"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_title": "*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "OR": [
+                        {
+                            "NOT": {
+                                "LT": {
+                                    "courses_avg": 88
+                                }
+                            }
+                        },
+                        {
+                            "NOT": {
+                                "AND": [
+                                    {
+                                        "LT": {
+                                            "courses_fail": 4
+                                        }
+                                    },
+                                    {
+                                        "IS": {
+                                            "courses_instructor": "*d*"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_id",
+                "courses_avg",
+                "courses_instructor",
+                "courses_title",
+                "courses_pass",
+                "courses_fail",
+                "courses_audit",
+                "courses_uuid",
+                "courses_year"
+            ],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 80.76,
+            "courses_instructor": "",
+            "courses_title": "teach adult",
+            "courses_pass": 159,
+            "courses_fail": 1,
+            "courses_audit": 0,
+            "courses_uuid": "36009",
+            "courses_year": 1900
+        },
+        {
+            "courses_dept": "adhe",
+            "courses_id": "327",
+            "courses_avg": 82.96,
+            "courses_instructor": "",
+            "courses_title": "teach adult",
+            "courses_pass": 193,
+            "courses_fail": 3,
+            "courses_audit": 0,
+            "courses_uuid": "68534",
+            "courses_year": 1900
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "title": "simple OR query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "EQ": {
+                        "courses_pass": 2
+                    }
+                },
+                {
+                    "LT": {
+                        "courses_audit": 40
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_fail"],
+            "ORDER": "courses_fail"
+        }
+    },
+    "isQueryValid": false,
+    "result": "ResultTooLargeError"
+}

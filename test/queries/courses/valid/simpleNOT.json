@@ -1,0 +1,23 @@
+{
+    "title": "simple NOT query",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "LT": {
+                    "courses_audit": 20
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_instructor"],
+            "ORDER": "courses_instructor"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        { "courses_instructor": "" },
+        { "courses_instructor": "" },
+        { "courses_instructor": "" },
+        { "courses_instructor": "" }
+    ]
+}

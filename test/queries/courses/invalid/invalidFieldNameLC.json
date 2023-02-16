@@ -1,0 +1,18 @@
+{
+    "title": "Invalid field name for AND",
+    "query": {
+        "WHERE": {
+            "AND": [
+                {
+                    "DNE": "abcd"
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

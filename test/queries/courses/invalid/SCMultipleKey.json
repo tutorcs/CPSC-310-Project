@@ -1,0 +1,17 @@
+{
+    "title": "SC empty object",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "courses_dept": "adhe",
+                "courses_instructor": "*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

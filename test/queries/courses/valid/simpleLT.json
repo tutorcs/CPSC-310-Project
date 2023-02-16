@@ -1,0 +1,16 @@
+{
+    "title": "simple LT query",
+    "query": {
+        "WHERE": {
+            "LT": {
+                "courses_year": 1900
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": ["courses_dept", "courses_avg"],
+            "ORDER": "courses_avg"
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}
